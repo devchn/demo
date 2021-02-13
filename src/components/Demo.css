@@ -1,0 +1,37 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.proportion{
+  display: inline-block;
+  width: 100px;
+}
+.singlePrice{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+p{
+  text-align: left;
+}
+.plan{
+  border: 2px solid #555;
+}
+.plan li{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #aaa;
+  list-style-type: none;
+  text-align: left;
+}
+.checkBox{
+  position: relative;
+  top: 2px;
+}
+.inputType{
+  margin: 0 5px;
+  border: 1px solid #555;
+  height: 30px;
+  text-indent: 0.5em;
+}
