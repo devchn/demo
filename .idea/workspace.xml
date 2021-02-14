@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eb731c3-46f1-4618-ad51-fbf2835c4bd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Demo.jsx" afterDir="false" />
+    <list default="true" id="8eb731c3-46f1-4618-ad51-fbf2835c4bd1" name="Default Changelist" comment="面试">
+      <change afterPath="$PROJECT_DIR$/src/views/FormControl.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/List.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/TodoList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Total.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="ReactClass" />
         <option value="CSS File" />
+        <option value="ReactClass" />
       </list>
     </option>
   </component>
@@ -44,8 +44,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="PostCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
@@ -87,33 +90,70 @@
       <option name="presentableId" value="Default" />
       <updated>1612968553914</updated>
       <workItem from="1612968555767" duration="15532000" />
-      <workItem from="1613180823243" duration="6418000" />
+      <workItem from="1613180823243" duration="7092000" />
+      <workItem from="1613310596455" duration="10742000" />
     </task>
+    <task id="LOCAL-00001" summary="面试">
+      <created>1613187303339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613187303339</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="面试" />
+    <option name="LAST_COMMIT_MESSAGE" value="面试" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1150" height="216" key="GridCell.Tab.0.bottom" timestamp="1613181518304">
+    <state x="552" y="178" key="#ESLint" timestamp="1613321787587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1150" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613181518304" />
-    <state width="1150" height="216" key="GridCell.Tab.0.center" timestamp="1613181518303">
+    <state x="552" y="178" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1613321787587" />
+    <state x="903" y="27" key="CommitChangelistDialog2" timestamp="1613187349298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1150" height="216" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613181518303" />
-    <state width="1150" height="216" key="GridCell.Tab.0.left" timestamp="1613181518303">
+    <state x="903" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1613187349298" />
+    <state x="1178" y="410" width="277" height="219" key="Github.ShareDialog" timestamp="1613187326416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1150" height="216" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613181518303" />
-    <state width="1150" height="216" key="GridCell.Tab.0.right" timestamp="1613181518303">
+    <state x="1178" y="410" width="277" height="219" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613187326416" />
+    <state width="1899" height="218" key="GridCell.Tab.0.bottom" timestamp="1613315246200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1150" height="216" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613181518303" />
-    <state x="1012" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1613186121341">
+    <state width="1899" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613315246200" />
+    <state width="1899" height="218" key="GridCell.Tab.0.center" timestamp="1613315246200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1012" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613186121341" />
+    <state width="1899" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613315246200" />
+    <state width="1899" height="218" key="GridCell.Tab.0.left" timestamp="1613315246200">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613315246200" />
+    <state width="1899" height="218" key="GridCell.Tab.0.right" timestamp="1613315246200">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613315246200" />
+    <state x="897" y="249" key="Vcs.Push.Dialog.v2" timestamp="1613187354044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="897" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613187354044" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1613314580309">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1613314580309" />
+    <state x="556" y="209" width="807" height="622" key="find.popup" timestamp="1613322117205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="556" y="209" width="807" height="622" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613322117205" />
+    <state x="1012" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1613322097302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1012" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613322097302" />
   </component>
 </project>
