@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eb731c3-46f1-4618-ad51-fbf2835c4bd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/RateList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormControl.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormControl.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Total.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Total.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/TodoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/TodoList.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +94,7 @@
       <workItem from="1613310596455" duration="10742000" />
       <workItem from="1613443514541" duration="4000" />
       <workItem from="1613444363687" duration="107000" />
-      <workItem from="1613444492725" duration="3085000" />
+      <workItem from="1613444492725" duration="4376000" />
     </task>
     <task id="LOCAL-00001" summary="面试">
       <created>1613187303339</created>
@@ -114,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613444457418</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="优化异步数据处理和使用useCallback优化性能">
+      <created>1613447736535</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613447736536</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +126,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="面试" />
     <MESSAGE value="adjusting file structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusting file structure" />
+    <MESSAGE value="优化异步数据处理和使用useCallback优化性能" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化异步数据处理和使用useCallback优化性能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#ESLint" timestamp="1613321787587">
@@ -134,10 +138,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1035" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613447595701" />
-    <state x="903" y="27" key="CommitChangelistDialog2" timestamp="1613444455826">
+    <state x="903" y="27" key="CommitChangelistDialog2" timestamp="1613453310037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="903" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1613444455826" />
+    <state x="903" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1613453310037" />
     <state x="1178" y="410" width="277" height="219" key="Github.ShareDialog" timestamp="1613187326416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

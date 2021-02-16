@@ -43,7 +43,7 @@ function TodoList () {
     setDoneList(list.filter(item=>{
       return item.done === true
     }));
-  }, [list, todoList, doneList])
+  }, [list, todoList, doneList]);
   const onSaveTodoList = useCallback((data) => {
     setList(list.concat(data));
   }, [list]);
