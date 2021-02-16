@@ -1,9 +1,8 @@
 import React, {memo, useState} from 'react'
-const defaultFunc = () => {};
-export const FormControl = memo(({
-  onSaveTodoList = defaultFunc(),
-  rate: {}
-}) => {
+export const Form = ({
+     onSaveTodoList,
+     forex = {}
+   }) => {
     const [form, setForm] = useState({
       id: '',
       task: '',
@@ -39,10 +38,6 @@ export const FormControl = memo(({
         done: form.done
       })
     };
-    /* 模拟数据,接口请求不到 */
-    const rate = {};
-    rate.rmbToUsd = 0.1520248078866076;
-    rate.rmbToRub = 11.5257;
     const addTodo = () => {
       if (form.task === ''){
         alert('任务名不能为空');
@@ -57,36 +52,40 @@ export const FormControl = memo(({
         return;
       }
       let list = {};
-      if (form.moneyType === 'RMB') {
-        list = {
-          id: new Date(),
-          name: form.task,
-          rmb: parseFloat(form.price),
-          usd: parseFloat((form.price * rate.rmbToUsd).toFixed(5)),
-          rub: parseFloat((form.price * rate.rmbToRub).toFixed(5)),
-          done: form.done
-        }
-      } else if (form.moneyType === 'USD') {
-        list = {
-          id: new Date(),
-          name: form.task,
-          rmb: parseFloat((form.price / rate.rmbToUsd).toFixed(5)),
-          usd: parseFloat(form.price),
-          rub: parseFloat((form.price / rate.rmbToUsd * rate.rmbToRub).toFixed(5)),
-          done: form.done
-        }
-      } else if (form.moneyType === 'RUB') {
-        list = {
-          id: new Date(),
-          name: form.task,
-          rmb: parseFloat((form.price / rate.rmbToRub).toFixed(5)),
-          usd: parseFloat(((form.price / rate.rmbToRub) * rate.rmbToUsd).toFixed(5)),
-          rub: parseFloat(form.price),
-          done: form.done
-        }
-      } else {
-        alert('请选择正确的货币类型！');
-        return;
+      switch (form.moneyType) {
+        case "RMB":
+          list = {
+            id: new Date(),
+            name: form.task,
+            rmb: parseFloat(form.price),
+            usd: parseFloat((form.price * forex.USD.value).toFixed(5)),
+            rub: parseFloat((form.price * forex.RUB.value).toFixed(5)),
+            done: form.done
+          };
+          break;
+        case "USD":
+          list = {
+            id: new Date(),
+            name: form.task,
+            rmb: parseFloat((form.price / forex.USD.value).toFixed(5)),
+            usd: parseFloat(form.price),
+            rub: parseFloat((form.price / forex.USD.value * forex.RUB.value).toFixed(5)),
+            done: form.done
+          };
+          break;
+        case "RUB":
+          list = {
+            id: new Date(),
+            name: form.task,
+            rmb: parseFloat((form.price / forex.RUB.value).toFixed(5)),
+            usd: parseFloat(((form.price / forex.RUB.value) * forex.USD.value).toFixed(5)),
+            rub: parseFloat(form.price),
+            done: form.done
+          };
+          break;
+        default:
+          alert('请选择正确的货币类型！');
+          return;
       }
       onSaveTodoList(list);
       // 每次添加后清空
@@ -110,12 +109,14 @@ export const FormControl = memo(({
         </datalist>
         <button className="addBtn" onClick={addTodo}>添加</button>
         <div className="rateList">
-          <p className="proportion">{rate.rmbToRub.toFixed(5)} ₽/￥</p>
-          <p className="proportion">{(rate.rmbToRub / rate.rmbToUsd).toFixed(5)} P/$</p>
-          <p className="proportion">{rate.rmbToUsd.toFixed(5)} ￥/$</p>
+          <p className="proportion">{forex.RUB ? forex.RUB.value.toFixed(5) : 0} ₽/￥</p>
+          <p className="proportion">{forex.RUB ? (forex.RUB.value / forex.USD.value).toFixed(5) : 0} P/$</p>
+          <p className="proportion">{forex.USD ? forex.USD.value.toFixed(5) : 0} ￥/$</p>
         </div>
       </>
     )
-});
+};
+
+const FormControl = memo(Form);
 
 export default FormControl

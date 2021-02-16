@@ -5,16 +5,16 @@ import FormControl from "../components/FormControl";
 import List from "../components/List";
 import Total from "../components/Total";
 
-function Demo () {
-  const [rate, setRate] = useState({});
+function TodoList () {
+  const [forex, setForex] = useState({});
   //  展示数据
   const [list, setList] = useState([]);
   const [todoList, setTodoList] = useState([]);
   const [doneList, setDoneList] = useState([]);
 
   useEffect(()=>{
-    axios.post('https://api.globus.furniture/rate').then(data => {
-      setRate(data.data)
+    axios.get('https://api.globus.furniture/forex').then(data => {
+      setForex(data.data)
     }).catch(error=>{
       console.error(error)
     })
@@ -27,7 +27,7 @@ function Demo () {
       return item.done === true
     }));
   }, [list]);
-  const toggleTodoList = (id) => {
+  const toggleTodoList = useCallback((id) => {
     // 修改list
     setList(list.map((item,_i) => {
       if (id === item.id) {
@@ -43,14 +43,14 @@ function Demo () {
     setDoneList(list.filter(item=>{
       return item.done === true
     }));
-  };
-  const onSaveTodoList = (data) => {
+  }, [list, todoList, doneList])
+  const onSaveTodoList = useCallback((data) => {
     setList(list.concat(data));
-  };
+  }, [list]);
 
   return (
     <div className="todoWrap">
-      <FormControl rate={rate} onSaveTodoList={onSaveTodoList}/>
+      <FormControl forex={forex} onSaveTodoList={onSaveTodoList}/>
       <div>
         <p>计划：</p>
         <List toggleTodoList={toggleTodoList} list={todoList}/>
@@ -71,4 +71,4 @@ function Demo () {
   )
 }
 
-export default Demo
+export default TodoList

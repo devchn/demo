@@ -1,9 +1,8 @@
 import React, {memo} from 'react'
-const defaultFunc = () => {};
-export const List = memo(({
-  toggleTodoList = defaultFunc(),
-  list = []
-}) => {
+export const DataList = ({
+    toggleTodoList,
+    list
+  }) => {
   return (
     <>
       <ul className="plan">
@@ -23,6 +22,8 @@ export const List = memo(({
       </ul>
     </>
   )
-})
+}
+
+const List = memo(DataList)
 
 export default List

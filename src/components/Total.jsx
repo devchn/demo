@@ -1,6 +1,6 @@
 import React, {memo} from 'react'
 
-export const Total = memo(({
+export const TotalData = ({
   list = []
 }) => {
   return (
@@ -22,6 +22,8 @@ export const Total = memo(({
       }</p>
     </>
   )
-})
+}
+
+const Total = memo(TotalData)
 
 export default Total
