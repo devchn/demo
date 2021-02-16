@@ -1,9 +1,9 @@
 import React, {useState,useEffect, useCallback} from 'react'
 import './style.css'
 import axios from 'axios'
-import FormControl from "./FormControl";
-import List from "./List";
-import Total from "./Total";
+import FormControl from "../components/FormControl";
+import List from "../components/List";
+import Total from "../components/Total";
 
 function Demo () {
   const [rate, setRate] = useState({});
